@@ -1,4 +1,4 @@
-package infinity1087.android.com.mvp_movieapp
+package infinity1087.android.com.mvp_movieapp.contract
 
 import infinity1087.android.com.myapplication.model.Result
 
@@ -6,7 +6,7 @@ interface MainContract {
 
 
     interface MainView {
-        fun setDataToRecyclerView(list: ArrayList<Result>)
+        fun setDataToRecyclerView(list: List<Result>)
 
     }
 
@@ -18,7 +18,7 @@ interface MainContract {
     interface GetNoticeIntractor {
 
         interface OnFinishedListener {
-            fun onFinished(noticeArrayList: ArrayList<Result>)
+            fun onFinished(noticeArrayList: List<Result>)
             fun onFailure(t: Throwable)
         }
 
